@@ -9,7 +9,7 @@ public class EditorText implements EditorTextInterface {
     private String text;
     private int cursorPosition;
     private int selectionEnd;
-    private final ArrayList<EditorTextChangeListener> listeners;
+    private ArrayList<EditorTextChangeListener> listeners;
 
     public EditorText() {
         listeners = new ArrayList<>();
@@ -52,4 +52,31 @@ public class EditorText implements EditorTextInterface {
     public void removeChangeListener(EditorTextChangeListener editorTextChangeListener) {
         this.listeners.remove(editorTextChangeListener);
     }
+
+    public EditorTextMemento makeMemento(){
+        return new EditorTextMemento(this.text,this.cursorPosition,this.selectionEnd,this.listeners);
+    }
+
+    public void Restore(EditorTextMemento memento){
+        this.text = memento.text;
+        this.cursorPosition = memento.cursorPosition;
+        this.selectionEnd = memento.selectionEnd;
+        this.listeners = memento.listeners;
+    }
+
+    public class EditorTextMemento{
+        private final String text;
+        private final int cursorPosition;
+        private final int selectionEnd;
+        private final ArrayList<EditorTextChangeListener> listeners;
+
+        public EditorTextMemento(String text, int cursorPosition, int selectionEnd,
+                                 ArrayList<EditorTextChangeListener> listeners){
+            this.text = text;
+            this.cursorPosition = cursorPosition;
+            this.selectionEnd = selectionEnd;
+            this.listeners = listeners;
+        }
+    }
+
 }
