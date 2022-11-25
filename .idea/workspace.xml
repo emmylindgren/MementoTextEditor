@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Added memento-class as inner class on editortext class.">
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextMementoManager.java" afterDir="false" />
+    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Added memento-manager class.">
+      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/TextEditorView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,15 @@
       <recent name="C:\Users\Emmy\IdeaProjects\TextEditorMemento\src\se\umu\cs\apjava" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.umu.cs.emli.Main" />
+      <module name="TextEditorMemento" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +78,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1669383243808</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Added memento-manager class.">
+      <created>1669384105675</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1669384105675</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +102,7 @@
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Added class Editortext." />
     <MESSAGE value="Added memento-class as inner class on editortext class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added memento-class as inner class on editortext class." />
+    <MESSAGE value="Added memento-manager class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added memento-manager class." />
   </component>
 </project>
