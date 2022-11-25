@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Added memento-manager class.">
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/TextEditorView.java" afterDir="false" />
+    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Added view and controller class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1669384105675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Added view and controller class.">
+      <created>1669389597773</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1669389597773</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +107,7 @@
     <MESSAGE value="Added class Editortext." />
     <MESSAGE value="Added memento-class as inner class on editortext class." />
     <MESSAGE value="Added memento-manager class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added memento-manager class." />
+    <MESSAGE value="Added view and controller class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added view and controller class." />
   </component>
 </project>

@@ -22,13 +22,11 @@ public class EditorText implements EditorTextInterface {
 
     @Override
     public void setText(String text) {
-        //Uppdatera lyssnare här?
         this.text = text;
     }
 
     @Override
     public void setCursorPosition(int cursorPosition, int selectionEnd) {
-        //Uppdatera lyssnare här?
         this.cursorPosition = cursorPosition;
         this.selectionEnd = selectionEnd;
     }
