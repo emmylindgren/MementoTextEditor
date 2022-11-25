@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Added class Editortext.">
+    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Added memento-class as inner class on editortext class.">
+      <change afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextMementoManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" afterDir="false" />
     </list>
@@ -61,7 +62,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1669378400264</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Added memento-class as inner class on editortext class.">
+      <created>1669383243808</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1669383243808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +85,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Added class Editortext." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added class Editortext." />
+    <MESSAGE value="Added memento-class as inner class on editortext class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added memento-class as inner class on editortext class." />
   </component>
 </project>

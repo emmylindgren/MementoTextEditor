@@ -57,11 +57,18 @@ public class EditorText implements EditorTextInterface {
         return new EditorTextMemento(this.text,this.cursorPosition,this.selectionEnd,this.listeners);
     }
 
-    public void Restore(EditorTextMemento memento){
+    public void restore(EditorTextMemento memento){
         this.text = memento.text;
         this.cursorPosition = memento.cursorPosition;
         this.selectionEnd = memento.selectionEnd;
         this.listeners = memento.listeners;
+        updateListeners();
+    }
+
+    private void updateListeners(){
+        for (EditorTextChangeListener listener:listeners) {
+            listener.stateUpdated(this);
+        }
     }
 
     public class EditorTextMemento{
