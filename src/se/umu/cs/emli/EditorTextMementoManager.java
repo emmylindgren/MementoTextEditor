@@ -14,6 +14,11 @@ public class EditorTextMementoManager {
         mementoStack = new Stack<>();
     }
     public void save(EditorText.EditorTextMemento memento){
+        if(hasMemento()){
+           if(mementoStack.peek().equals(memento)){
+               return;
+           }
+        }
         mementoStack.push(memento);
     }
     public EditorText.EditorTextMemento restore(){

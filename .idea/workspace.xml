@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Fixed bug when memento-stack was empty.">
+    <list default="true" id="b6fb6756-e73f-4b5d-843e-9efb2fb6d9f5" name="Changes" comment="Cleaned up and added comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextMementoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/EditorTextMementoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/umu/cs/emli/TextEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/umu/cs/emli/TextEditorView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1669620187034</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Cleaned up and added comments.">
+      <created>1669622220337</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1669622220337</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +129,7 @@
     <MESSAGE value="Added view and controller class." />
     <MESSAGE value="Cleaned up code." />
     <MESSAGE value="Fixed bug when memento-stack was empty." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug when memento-stack was empty." />
+    <MESSAGE value="Cleaned up and added comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up and added comments." />
   </component>
 </project>

@@ -2,6 +2,8 @@ package se.umu.cs.emli;
 import se.umu.cs.apjava.EditorTextChangeListener;
 import se.umu.cs.apjava.EditorTextInterface;
 import java.util.ArrayList;
+import java.util.Objects;
+
 /**
  * Class to represent the current text in Texteditor. Keeps track of
  * the current text, cursorposition, selected text (if there is any) and the
@@ -89,6 +91,35 @@ public class EditorText implements EditorTextInterface {
             this.cursorPosition = cursorPosition;
             this.selectionEnd = selectionEnd;
             this.listeners = listeners;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (obj == null) {
+                return false;
+            }
+
+            if (obj.getClass() != this.getClass()) {
+                return false;
+            }
+
+            final EditorTextMemento other = (EditorTextMemento) obj;
+            if (!Objects.equals(this.text, other.text)) {
+                return false;
+            }
+
+            if (this.cursorPosition != other.cursorPosition) {
+                return false;
+            }
+
+            if(this.selectionEnd != other.selectionEnd){
+                return false;
+            }
+
+            for (EditorTextChangeListener listener:this.listeners) {
+                if(!other.listeners.contains(listener)) return false;
+            }
+            return true;
         }
     }
 }
