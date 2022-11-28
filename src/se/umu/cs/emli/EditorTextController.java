@@ -16,7 +16,7 @@ public class EditorTextController {
     }
 
     private void restoreEditor(){
-        text.restore(mementoManager.restore());
+        if(mementoManager.hasMemento()) text.restore(mementoManager.restore());
     }
 
     private void saveEditor(){
