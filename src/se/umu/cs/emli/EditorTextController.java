@@ -1,5 +1,10 @@
 package se.umu.cs.emli;
-
+/**
+ * Controller-class for TextEditor.
+ * Inflates view and sets up listeners.
+ * @author Emmy Lindgren, id19eln.
+ * Date: 2022-11-28
+ */
 public class EditorTextController {
     TextEditorView view;
     EditorText text;
@@ -14,11 +19,9 @@ public class EditorTextController {
         view.setSaveButtonListener(e -> saveEditor());
         view.setRestoreButtonListener(e -> restoreEditor());
     }
-
     private void restoreEditor(){
         if(mementoManager.hasMemento()) text.restore(mementoManager.restore());
     }
-
     private void saveEditor(){
         mementoManager.save(text.makeMemento());
     }

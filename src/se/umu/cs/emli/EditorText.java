@@ -1,10 +1,15 @@
 package se.umu.cs.emli;
-
 import se.umu.cs.apjava.EditorTextChangeListener;
 import se.umu.cs.apjava.EditorTextInterface;
-
 import java.util.ArrayList;
-
+/**
+ * Class to represent the current text in Texteditor. Keeps track of
+ * the current text, cursorposition, selected text (if there is any) and the
+ * listeners of the model.
+ * Originator-class of EditorTextMemento.
+ * @author Emmy Lindgren, id19eln.
+ * Date: 2022-11-21
+ */
 public class EditorText implements EditorTextInterface {
     private String text;
     private int cursorPosition;
@@ -14,23 +19,19 @@ public class EditorText implements EditorTextInterface {
     public EditorText() {
         listeners = new ArrayList<>();
     }
-
     @Override
     public String getText() {
         return this.text;
     }
-
     @Override
     public void setText(String text) {
         this.text = text;
     }
-
     @Override
     public void setCursorPosition(int cursorPosition, int selectionEnd) {
         this.cursorPosition = cursorPosition;
         this.selectionEnd = selectionEnd;
     }
-
     @Override
     public int getCursorPosition() {
         return cursorPosition;
@@ -50,11 +51,16 @@ public class EditorText implements EditorTextInterface {
     public void removeChangeListener(EditorTextChangeListener editorTextChangeListener) {
         this.listeners.remove(editorTextChangeListener);
     }
-
+    /**
+     * @return a EditorTextMemento-object to be stored in caretaker-class (EditorTextMementoManager).
+     */
     public EditorTextMemento makeMemento(){
-        return new EditorTextMemento(this.text,this.cursorPosition,this.selectionEnd,this.listeners);
+        return new EditorTextMemento(this.text, this.cursorPosition, this.selectionEnd, this.listeners);
     }
-
+    /**
+     * Restores the state of the class to some old state.
+     * @param memento containing the state of the class it wishes to return to.
+     */
     public void restore(EditorTextMemento memento){
         this.text = memento.text;
         this.cursorPosition = memento.cursorPosition;
@@ -62,14 +68,16 @@ public class EditorText implements EditorTextInterface {
         this.listeners = memento.listeners;
         updateListeners();
     }
-
     private void updateListeners(){
         for (EditorTextChangeListener listener:listeners) {
             listener.stateUpdated(this);
         }
     }
-
-    public class EditorTextMemento{
+    /**
+     * Memento-class for EditorText-class.
+     * Makes a memento-object of the current state of the originator-class (EditorText).
+     */
+    public static class EditorTextMemento{
         private final String text;
         private final int cursorPosition;
         private final int selectionEnd;
@@ -83,5 +91,4 @@ public class EditorText implements EditorTextInterface {
             this.listeners = listeners;
         }
     }
-
 }
